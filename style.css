@@ -650,8 +650,8 @@
 
 @media (min-width:1120px) {
     .services__company-image img {
-        width: 350px;
-        height: 250px;
+        width: 210px;
+        height: 170px;
     }
 }
 .services__description {
@@ -737,7 +737,7 @@
 @media (min-width:768px) { 
     .services__information {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         padding: 15px;
         color: #1B1C21;
         margin-left: 10px;
@@ -1306,6 +1306,7 @@ align-items: center;
 @media(min-width: 768px) {
     .modal-feedback,.modal-feedback:nth-child(1) {
         width: 320px;
+        min-height: 450px;
     }
 }
 
