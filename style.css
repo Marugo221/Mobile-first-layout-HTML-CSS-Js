@@ -8,14 +8,14 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 915px;
+        width: 760px;
     }
     
 }
 
 @media (min-width:1120px) {
     .brands__container {
-        width: 1100px;  
+        width: 83%;
     }
 }
         
@@ -123,12 +123,15 @@
     line-height: 24px;
 }
 .brands-slide__goto img {
-    margin-left: 9px;
     margin-top: 8px;
 }
 .brands-slide__item {
     margin: 16px 7px;
     height: 72px !important;
+}
+
+.brands-slide__item:hover {
+    cursor: pointer;
 }
 
 
@@ -158,7 +161,7 @@
 
 @media (min-width: 1120px) {
     .brands-slide__items--secondblock {
-        flex-wrap: nowrap!important;
+        flex-wrap: wrap !important;
     }
 }
 @media (min-width: 768px) {
@@ -166,9 +169,8 @@
 }
 
 .brands-slide__items {
-    justify-content: start;
+    justify-content: flex-start;
     height: 215px;
-    margin-left: 20px;
 }
 
 @media (min-width:768px) {
@@ -182,13 +184,16 @@
 @media (min-width:1120px) {
     .brands-slide__items {
         height: 215px;
-        width: 1040px;
     }
 }
 .brands-slide__item2 {
     margin: 16px 7px;
     height: 160px !important;
     position: relative;
+}
+
+.brands-slide__item2:hover {
+    cursor: pointer;
 }
 
 .brands .brands-slide__item2 img {
@@ -304,6 +309,7 @@
 .footeritems__langs span:hover {
     transition: all 0.2s ease-out;
     color:#7E7E82;
+    cursor: pointer;
 }
 .footeritems__mail {
     margin-top: 10px;
@@ -536,6 +542,7 @@
   @media (max-width:768px) {
     .modal {
       width: 100%;
+      display: none;
     }
   }
 
@@ -544,6 +551,11 @@
       display: block;
       box-shadow: none;
       position: relative;
+      width: 20%;
+    }
+
+    .CPS-main {
+      width: 80%;
     }
 
     .hidemodal {
@@ -574,6 +586,10 @@
     color: #7E7E82;
     justify-content: center;
     margin-left: 10px;
+}
+
+.menu-item > label:hover {
+    cursor: pointer;
 }
 
 
@@ -625,8 +641,8 @@
 
 @media (min-width:768px) {
     .services__company-image img {
-        width: 358px;
-        height: 244px;
+        width: 300px;
+        height: 220px;
         margin-right: 50px;
         margin-left: 30px;
     }
@@ -634,10 +650,8 @@
 
 @media (min-width:1120px) {
     .services__company-image img {
-        width: 85%;
-        height: 100%;
-        margin-right: 90px;
-        margin-left: 20px;
+        width: 350px;
+        height: 250px;
     }
 }
 .services__description {
@@ -723,9 +737,10 @@
 @media (min-width:768px) { 
     .services__information {
         display: flex;
-        padding: 15px;
         justify-content: space-between;
+        padding: 15px;
         color: #1B1C21;
+        margin-left: 10px;
     }
 }
 
@@ -863,20 +878,12 @@
 
 @media (min-width:1120px) {
     .services {
-        width: 100vw;
-
+        width: 100%;
     }
 }
 
-@media (min-width:1500px) {
-    .services {
-        width: 100vw;
-    }
-}
 
 .swiper-container {
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
     overflow: unset!important;
     list-style: none;
@@ -923,11 +930,11 @@ align-items: center;
 
 
   .swiper-wrapper {
-    overflow: visible;
+    overflow: overlay;
   }
 
   .swiper-slide {
-    width: 220px!important;
+    width: 190px!important;
     background-color: #ffffff;
     border: 2px solid #EAEAEA;
     border-radius: 6px;
@@ -998,7 +1005,6 @@ align-items: center;
     }
     .swiper-container {
         margin-left: auto;
-        margin-right: auto;
         position: relative;
         list-style: none;
         padding: 0;
@@ -1089,6 +1095,10 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.btn-order:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -1213,7 +1223,8 @@ align-items: center;
     .CPS {
         display: flex;
         justify-content: flex-start;
-        width: 117%;
+        width: 100%;
+        position: relative;
     }
 }
 
@@ -1302,7 +1313,6 @@ align-items: center;
     .modal-feedback,.modal-feedback:nth-child(1) {
         width: 440px;
         top: 0;
-        right: -302px;;
     }
 }
 
@@ -1334,7 +1344,7 @@ body {
   margin: 0; }
 
 :root {
-  width: 100vw; }
+  width: 100%; }
 
 
 /*# sourceMappingURL=style.css.map*/
