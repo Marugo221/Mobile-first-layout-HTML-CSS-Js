@@ -343,7 +343,7 @@
     filter:drop-shadow(0px 0px 3px rgba(13, 15, 24, 0.8));
 }
 .footeritems {
-    margin-top: 50px;
+    margin-top: 18px;
     display: flex;
     flex-direction: column;
     padding: 0 0 15px 20px;
@@ -512,6 +512,7 @@
     display: none;
     position: fixed;
     z-index: 9999;
+    height: 100%;
    
 }
 
@@ -519,7 +520,6 @@
   display:flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 88px;
 }
 
 
@@ -538,6 +538,14 @@
 .modal-wrapper {
   background: #FFFFFF;
   position: relative;
+}
+
+.modal a {
+  cursor: pointer;
+}
+
+.modal a:hover {
+  text-decoration: underline;
 }
 
   @media (max-width:768px) {
@@ -683,7 +691,6 @@
         display: block;
         font-size: 17px;
         margin-top: 10px;
-        width: 350px;
     }
 
     .services__description {
@@ -833,21 +840,24 @@
         overflow-x: auto;
     }
 }
-.services__read {
+.services__read, .services__close{
     position: relative;
     margin-left: 30px;
-    top: 10px;
 }
 
-.services__read a {
+.services__read {
+    display: none;
+}
+
+.services__read a,.services__close a {
     text-decoration: none;
 }
 
-.services__read a:active{
+.services__read a:active,.services__close a:active{
     color: black;
 }
 
-.services__read a:visited {
+.services__read a:visited,.services__close a:visited {
     color: black;
 }
 
@@ -861,6 +871,22 @@
     transform: rotate(90deg);
     font-family: monospace;
     letter-spacing: -2.5px;
+}
+
+.services__close:before {
+    position: absolute;
+    content: ">>";
+    top: 5px;
+    left: -20px;
+    color: #41F6D7;
+    width: 6px;
+    transform: rotate(-90deg);
+    font-family: monospace;
+    letter-spacing: -2.5px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
 }
 
 .services {
@@ -1228,7 +1254,7 @@ align-items: center;
 
 .modal-feedback {
     background-color: #ffffff;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     min-width: 320px;
@@ -1239,6 +1265,7 @@ align-items: center;
     display: flex;
     flex-direction: column;
     display: none;
+    height: 100vh;
 }
 
 .modal-feedback:nth-child(1) {
