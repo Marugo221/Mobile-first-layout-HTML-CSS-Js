@@ -739,6 +739,13 @@
     position: relative;
 }
 
+.services__information-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (min-width:768px) { 
     .services__information {
         display: flex;
