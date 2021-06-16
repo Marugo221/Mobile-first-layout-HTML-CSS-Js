@@ -739,7 +739,7 @@
     position: relative;
 }
 
-.services__information-wrapper {
+.services-information-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
