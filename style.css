@@ -1,6 +1,6 @@
 
 .brands__container {
-  
+  width: 100%;
 }
 
 @media (min-width:768px) {
@@ -104,6 +104,8 @@
     left: 10px;
     font-weight: bold;
 }
+
+
 
 
 
@@ -991,6 +993,11 @@ align-items: center;
   margin-top: 10px;
   padding-top: 25px;
  }
+
+.swiper-pagination {
+  z-index: 99999999;
+  
+}
 
  .brands .brands .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 10px 5px!important;
