@@ -957,13 +957,6 @@ align-items: center;
       position: relative!important;
       bottom: -20px !important;
   }
-  
-  
-
-
-  .swiper-wrapper {
-    overflow: overlay;
-  }
 
   .swiper-slide {
     background-color: #ffffff;
