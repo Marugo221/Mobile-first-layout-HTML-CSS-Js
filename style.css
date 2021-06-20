@@ -11,17 +11,19 @@
     height: 230px;
 }
 
-.brands .brands .brands__container {
-    height: 254px;
-
-}
-
-
 
 @media (min-width:768px) {
 
-    .brands .brands__container, .brands .brands .brands__container {
-        height: auto!important;
+    .brands:nth-child(2) .brands__container {
+        height: auto;
+    }
+       
+    .brands:nth-child(3) .brands__container {
+        height: auto;
+    }
+
+    .brands .brands .brands__container {
+        height: auto;
     }
 
     .brands__container {
