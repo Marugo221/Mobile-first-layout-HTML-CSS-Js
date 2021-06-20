@@ -21,7 +21,7 @@
 @media (min-width:768px) {
 
     .brands .brands__container, .brands .brands .brands__container {
-        height: auto;
+        height: auto!important;
     }
 
     .brands__container {
