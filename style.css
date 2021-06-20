@@ -934,7 +934,7 @@
     background-color: #ffffff;
     border: 2px solid #EAEAEA;
     border-radius: 6px;
-    margin-left: 20px;
+    width: 220px!important;
   }
 
  
@@ -955,8 +955,8 @@
 }
 
 .brands:nth-child(3)  .swiper-container {
-  height: 240px;
-}
+     height: 240px;
+ }
 
 .brands .brands .swiper-container {
   height: 280px;
