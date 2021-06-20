@@ -224,15 +224,10 @@
 
 .brands-slide__item3 {
   margin: 16px 7px;
-  height: 175px !important;
+  height: 195px !important;
 }
 
 @media (max-width: 768px) {
-
-  .brands-slide__item3 {
-      margin: 16px 7px;
-      height: 175px !important;
-  }
 
   .brands .brands .brands-slide__item3:first-child {
     display: none;
